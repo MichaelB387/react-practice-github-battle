@@ -1,14 +1,16 @@
 var React = require('react');
-var ReactDom = require('react-dom');
+var ReactDOM = require('react-dom');
 require('./index.css');
 
+
+// This is ES6 syntax
 class App extends React.Component {
     // renders UI
     render () {
         return (
             // This is JSX not HTML
             <div>
-                Hello World!
+                Hello React Training!
             </div>
         )
 
