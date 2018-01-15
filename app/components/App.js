@@ -1,4 +1,5 @@
-var React = require('react')
+var React = require('react');
+var Popular = require('./Popular')
 
 // This is ES6 syntax
 class App extends React.Component {
@@ -6,8 +7,8 @@ class App extends React.Component {
     render () {
         return (
             // This is JSX not HTML
-            <div>
-                Hello React Training!
+            <div className='container'>
+                <Popular/>
             </div>
         )
 
