@@ -1,5 +1,6 @@
 var React = require('react');
 var PropTypes = require('prop-types');
+var api = require('../utils/api')
 
 // This is a stateless functional component
 function SelectLanguage (props) {
@@ -34,7 +35,8 @@ class Popular extends React.Component {
         super(props)
         // INITIAL STATE FOR THIS COMPONENT
         this.state = {
-            selectedLanguage: 'All'
+            selectedLanguage: 'All',
+            repos: null
         }
 
         this.updateLanguage = this.updateLanguage.bind(this)
